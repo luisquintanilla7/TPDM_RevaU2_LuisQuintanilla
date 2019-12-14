@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PacienteInsertar"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NOMBRE"
+        android:textAlignment="center"
+        android:id="@+id/campoNombre"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="APELLIDO"
+        android:textAlignment="center"
+        android:id="@+id/campoApellido"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EDAD"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/campoEdad"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/sexo"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEXO"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="150dp"
+
+            />
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            />
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TELEFONO"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/campoTel"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERTAR"
+        android:textSize="20dp"
+        android:id="@+id/botonInsertar"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
